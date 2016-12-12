@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   scope module: "api" do
     namespace :v1 do
-      resources :menus
+      resources :menus, :items, :orders
     end
   end
   # The priority is based upon order of creation: first created -> highest priority.
